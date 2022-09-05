@@ -6,5 +6,3 @@ while i == "no":
     i = input("Do you want to stop? ")
     if i == 'yes':
         break
-    else:
-        i="no"
