@@ -10,27 +10,27 @@ password = sys.argv[1]
 is_valid = False
 
 # Do all the requirement checks here.
-lower_case = FALSE
-upper_case = FALSE
-number = FALSE
-special = FALSE
+lower_case = False
+upper_case = False
+number = False
+special = False
 
 for c in password:
     if c.islower():
-        lower_case = TRUE
+        lower_case = True
     elif c.isupper():
-        upper_case = TRUE
+        upper_case = True
     elif c.isnumeric():
-        number = TRUE
+        number = True
     elif c in "$#@":
-        special = TRUE
+        special = True
     else: 
         continue
-    if lower_case == TRUE:
-        if upper_case == TRUE:
-            if number == TRUE:
-                if special == TRUE:
-                    is_valid = TRUE
+    if lower_case == True:
+        if upper_case == True:
+            if number == True:
+                if special == True:
+                    is_valid = True
                     break   
 
 print(is_valid)
