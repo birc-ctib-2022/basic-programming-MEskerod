@@ -9,7 +9,8 @@ count = {}
 # Your code goes here.
 
 for c in x: 
-    count[c] += 1
+    if c in count:
+        count[c] += 1
     if c not in count:
         count[c]=1
 
